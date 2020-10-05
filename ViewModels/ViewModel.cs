@@ -35,8 +35,8 @@ namespace HT_5_Comlex_MVVM_DB
                     Lastname = RandomNameGenerator.NameGenerator.GenerateLastName()
                 });
             });
-            RemoveCommand = new RelayCommand(x => Students.Remove(SelectedStudent));
-            ClearCommand = new RelayCommand(x => Students.Clear());
+            RemoveCommand = new RelayCommand(x => Students.Remove(SelectedStudent), x => Students.Count > 0);
+            ClearCommand = new RelayCommand(x => Students.Clear(), x => Students.Count > 0);
             Colors = new ObservableCollection<string>
             {
                 "Red",
