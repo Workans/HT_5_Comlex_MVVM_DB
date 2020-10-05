@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HT_5_Comlex_MVVM_DB", "HT_5_Comlex_MVVM_DB.csproj", "{4956161A-1260-44DF-AB9C-44816D566300}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbMVVM.UI", "..\DbMVVM.UI\DbMVVM.UI.csproj", "{8A71A70F-041F-4FB4-A674-EF93D86069E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbMVVM.GAL", "..\DbMVVM.GAL\DbMVVM.GAL.csproj", "{BC433BF2-921B-4DA4-95DD-A66839B9EA3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4956161A-1260-44DF-AB9C-44816D566300}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4956161A-1260-44DF-AB9C-44816D566300}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4956161A-1260-44DF-AB9C-44816D566300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A71A70F-041F-4FB4-A674-EF93D86069E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A71A70F-041F-4FB4-A674-EF93D86069E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A71A70F-041F-4FB4-A674-EF93D86069E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A71A70F-041F-4FB4-A674-EF93D86069E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC433BF2-921B-4DA4-95DD-A66839B9EA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC433BF2-921B-4DA4-95DD-A66839B9EA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC433BF2-921B-4DA4-95DD-A66839B9EA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC433BF2-921B-4DA4-95DD-A66839B9EA3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
