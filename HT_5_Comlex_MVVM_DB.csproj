@@ -69,12 +69,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BaseNotifyPropertyChanged.cs" />
-    <Compile Include="Data.cs" />
-    <Compile Include="RelayCommand.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="System\Drawing\Color.cs" />
-    <Page Include="MainWindow.xaml">
+    <Compile Include="Infrastructure\BaseNotifyPropertyChanged.cs" />
+    <Compile Include="ViewModels\ViewModel.cs" />
+    <Compile Include="Infrastructure\RelayCommand.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Page Include="Views\MainView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -82,8 +81,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

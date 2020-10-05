@@ -27,10 +27,16 @@ namespace HT_5_Comlex_MVVM_DB
 
         public ViewModel()
         {
-            AddCommand = new RelayCommand(x => AddStudent());
-            RemoveCommand = new RelayCommand(x => RemoveStudent());
-            ClearCommand = new RelayCommand(x => ClearAll());
-
+            AddCommand = new RelayCommand(x => 
+            {
+                Students.Add(new Student
+                {
+                    Name = RandomNameGenerator.NameGenerator.GenerateFirstName(Gender.Male),
+                    Lastname = RandomNameGenerator.NameGenerator.GenerateLastName()
+                });
+            });
+            RemoveCommand = new RelayCommand(x => Students.Remove(SelectedStudent));
+            ClearCommand = new RelayCommand(x => Students.Clear());
             Colors = new ObservableCollection<string>
             {
                 "Red",
@@ -42,25 +48,6 @@ namespace HT_5_Comlex_MVVM_DB
                 "Black",
                 "Violet"
             };
-        }
-
-        public void AddStudent()
-        {
-            Students.Add(new Student
-            {
-                Name = RandomNameGenerator.NameGenerator.GenerateFirstName(Gender.Male),
-                Lastname = RandomNameGenerator.NameGenerator.GenerateLastName()
-            });
-        }
-
-        public void RemoveStudent()
-        {
-            Students.Remove(SelectedStudent);
-        }
-
-        public void ClearAll()
-        {
-            Students.Clear();
         }
     }
 }
